@@ -6,7 +6,6 @@ function displayMenu() {
   dynMenu.style.right = '0%';
 }
 
-
 function hideMenu(item) {
   item.addEventListener('click', () => {
     dynMenu.style.right = '100%';

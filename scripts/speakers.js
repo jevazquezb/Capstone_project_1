@@ -3,7 +3,7 @@ const speakers = [
     imageLocation: './images/dipippo-bg.png',
     name: 'Ronald DiPippo',
     position: 'Professor emeritus, University of Massachusetts Dartmouth',
-    description: 'Ron is a retired Chancellor Professor who was focused on geothermal Energy and has served as a consulting expert in 9 countries.',    
+    description: 'Ron is a retired Chancellor Professor who was focused on geothermal Energy and has served as a consulting expert in 9 countries.',
   },
   {
     imageLocation: './images/kurek-bg.png',
@@ -40,12 +40,11 @@ const speakers = [
 function createElement(type, classes = null, text = null) {
   const element = document.createElement(type);
   if (classes) element.setAttribute('class', classes);
-  if (text) element.textContent = text;  
+  if (text) element.textContent = text;
   return element;
 }
 
 function addSpeaker(speaker) {
-
   const speakerInfo = createElement('div', 'flex speaker-info');
   speakerInfo.appendChild(createElement('h3', 'speaker-name', speaker.name));
   speakerInfo.appendChild(createElement('h4', 'speaker-pos', speaker.position));
@@ -54,10 +53,10 @@ function addSpeaker(speaker) {
 
   const speakerPhoto = createElement('img', 'speaker-size');
   speakerPhoto.src = speaker.imageLocation;
-  speakerPhoto.alt = speaker.name + ' photo';
+  speakerPhoto.alt = `${speaker.name} photo`;
   speakerPhoto.title = speaker.name;
 
-  const speakerBox = createElement('div', 'flex act-container speaker-cont');  
+  const speakerBox = createElement('div', 'flex act-container speaker-cont');
   speakerBox.appendChild(speakerPhoto);
   speakerBox.appendChild(speakerInfo);
 
@@ -75,9 +74,5 @@ speakSection.appendChild(speakLine);
 const speakCont = createElement('div', 'grid-program grid-speaker');
 speakers.forEach((speaker) => {
   speakCont.appendChild(addSpeaker(speaker));
-})
+});
 speakSection.appendChild(speakCont);
-
-
-
-

@@ -1,5 +1,5 @@
 :root {
-  --darky: #272A31;
+  --darky: #272a31;
   --orangy: #ec5242;
   --lighty: #d3d3d3;
   --lato: 'Lato', sans-serif;
@@ -8,31 +8,32 @@
 
 body {
   width: 100%;
-  background-color: #fff;  
+  background-color: #fff;
   box-sizing: border-box;
   font-family: var(--lato);
-  color: var(--darky)
+  color: var(--darky);
 }
 
 .flex {
   display: flex;
 }
 
-.sub-menu, .main-menu {
+.sub-menu,
+.main-menu {
   display: none;
 }
 
 .menu-btn {
   position: absolute;
   left: 7%;
-  top: 20px;  
+  top: 20px;
 }
 
 #about {
-  background-color: #f7f7f8;;
+  background-color: #f7f7f8;
   background-image: url("../images/mobile_about_bg.png");
   background-repeat: no-repeat;
-  background-position: 0 20%;  
+  background-position: 0 20%;
   padding: 5rem 5% 5rem 5%;
   flex-direction: column;
   align-items: center;
@@ -56,7 +57,7 @@ body {
   border: 1px solid var(--orangy);
   margin-bottom: 1.1rem;
   margin-top: 0;
-  width: 10%; 
+  width: 10%;
 }
 
 .line-desk {
@@ -69,24 +70,24 @@ body {
   padding: 0.3rem;
   font-size: 0.85rem;
   margin-bottom: 1.3rem;
-  text-align: justify;  
+  text-align: justify;
   border-radius: 2px;
 }
 
 .about-contact {
-  width: 80%;  
+  width: 80%;
   font-size: 0.8125rem;
   text-align: center;
   margin-bottom: 0.6rem;
 }
 
-.email { 
-  font-weight: bold; 
+.email {
+  font-weight: bold;
   font-size: 0.8125em;
   color: var(--darky);
 }
 
-#logo {  
+#logo {
   padding: 2rem 5% 2rem 5%;
   flex-direction: column;
   align-items: center;
@@ -94,7 +95,7 @@ body {
 }
 
 .logo-subtitle {
-  font-weight: bold;  
+  font-weight: bold;
   margin-bottom: 1.1rem;
   font-size: 1.3rem;
   text-align: center;
@@ -111,10 +112,10 @@ body {
   width: 180px;
 }
 
-#past-congress {    
+#past-congress {
   padding: 2rem 5% 2rem 5%;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
 .grid-con {
@@ -127,7 +128,7 @@ body {
 }
 
 .wgc {
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: var(--orangy);
   background-blend-mode: multiply;
@@ -139,16 +140,16 @@ body {
 }
 
 .wgc-ice {
-  background-image: url("../images/wgc2020_1.jpg");  
+  background-image: url("../images/wgc2020_1.jpg");
 }
 
 .wgc-aus {
-  background-image: url("../images/wgc2015.jpg");  
+  background-image: url("../images/wgc2015.jpg");
 }
 
 .wgc-title {
   font-size: 1.5rem;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 #credit {
@@ -163,14 +164,14 @@ body {
   width: 120px;
 }
 
-.credit-label {  
+.credit-label {
   color: #fff;
   font-size: 0.75rem;
 }
 
-/* Dynamic menu*/
+/* Dynamic menu */
 
-.dynamic-menu {  
+.dynamic-menu {
   display: flex;
   position: fixed;
   top: 0;
@@ -178,7 +179,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--darky);
-  z-index: 1;  
+  z-index: 1;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 2.5rem;
@@ -189,12 +190,12 @@ body {
 }
 
 .close-btn {
-  align-self: flex-end;   
+  align-self: flex-end;
 }
 
 .dynamic-list {
   flex-direction: column;
-  justify-content: flex-start;  
+  justify-content: flex-start;
   row-gap: 2.5rem;
 }
 
@@ -204,24 +205,24 @@ body {
   text-decoration: none;
 }
 
-.dynamic-btn {  
+.dynamic-btn {
   background-color: var(--orangy);
   padding: 0.7rem;
   font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-
   /* Menu */
 
-  .menu-btn, .dynamic-menu {
+  .menu-btn,
+  .dynamic-menu {
     display: none;
   }
-    
+
   .sub-menu {
     display: flex;
-    justify-content: flex-end;    
-    background-color: var(--darky);       
+    justify-content: flex-end;
+    background-color: var(--darky);
     padding: 0.8rem 15%;
   }
 
@@ -239,13 +240,13 @@ body {
     text-decoration: none;
   }
 
-  .a-sub-menu:hover {    
+  .a-sub-menu:hover {
     text-decoration: underline;
   }
 
   .main-menu {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     padding: 0.4rem 15%;
   }
 
@@ -280,9 +281,9 @@ body {
   /* About */
 
   #about {
-    background-color: #f5f5f6;      
+    background-color: #f5f5f6;
     padding: 5rem 20%;
-    background-position: 39% 39%;    
+    background-position: 39% 39%;
   }
 
   .about-subtitle {
@@ -312,7 +313,8 @@ body {
     margin-bottom: 3rem;
   }
 
-  .about-contact, .email{
+  .about-contact,
+  .email {
     font-size: 1.25rem;
   }
 
@@ -351,7 +353,7 @@ body {
 
   .wgc-title {
     font-size: 2.5rem;
-    font-weight: bold;  
+    font-weight: bold;
   }
 
   .wgc-sub {
