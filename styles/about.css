@@ -1,0 +1,330 @@
+:root {
+  --darky: #272A31;
+  --orangy: #ec5242;
+  --lighty: #d3d3d3;
+  --lato: 'Lato', sans-serif;
+  --coco: 'COCOGOOSE', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #fff;  
+  box-sizing: border-box;
+  font-family: var(--lato);
+  color: var(--darky)
+}
+
+.flex {
+  display: flex;
+}
+
+.sub-menu, .main-menu {
+  display: none;
+}
+
+.menu-btn {
+  position: absolute;
+  left: 7%;
+  top: 20px;  
+}
+
+#about {
+  background-color: #f7f7f8;;
+  background-image: url("../images/mobile_about_bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 20%;  
+  padding: 5rem 5% 5rem 5%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-subtitle {
+  color: var(--orangy);
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--orangy);
+  font-size: 2em;
+  font-family: var(--coco);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.line {
+  border: 1px solid var(--orangy);
+  margin-bottom: 1.1rem;
+  margin-top: 0;
+  width: 10%; 
+}
+
+.line-desk {
+  display: none;
+}
+
+.main-desc {
+  background-color: #fff;
+  border: 2px solid var(--lighty);
+  padding: 0.3rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.3rem;
+  text-align: justify;  
+  border-radius: 2px;
+}
+
+.about-contact {
+  width: 80%;  
+  font-size: 0.8125rem;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.email { 
+  font-weight: bold; 
+  font-size: 0.8125em;
+  color: var(--darky);
+}
+
+#logo {  
+  padding: 2rem 5% 2rem 5%;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid var(--lighty);
+}
+
+.logo-subtitle {
+  font-weight: bold;  
+  margin-bottom: 1.1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 80%;
+}
+
+.logo-desc {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-img {
+  border: 2px solid var(--lighty);
+  width: 180px;
+}
+
+#past-congress {    
+  padding: 2rem 5% 2rem 5%;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.grid-con {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 225px);
+  width: 100%;
+  grid-gap: 1rem;
+  margin-bottom: 0;
+}
+
+.wgc {
+  background-repeat: no-repeat;  
+  background-size: 100% 100%;
+  background-color: var(--orangy);
+  background-blend-mode: multiply;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.wgc-ice {
+  background-image: url("../images/wgc2020_1.jpg");  
+}
+
+.wgc-aus {
+  background-image: url("../images/wgc2015.jpg");  
+}
+
+.wgc-title {
+  font-size: 1.5rem;
+  font-weight: bold;  
+}
+
+#credit {
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  background-color: var(--darky);
+}
+
+.wgc-logo {
+  width: 120px;
+}
+
+.credit-label {  
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* Menu */
+
+  .menu-btn {
+    display: none;
+  }
+    
+  .sub-menu {
+    display: flex;
+    justify-content: flex-end;    
+    background-color: var(--darky);       
+    padding: 0.8rem 15%;
+  }
+
+  .sub-list {
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    min-width: 222px;
+  }
+
+  .a-sub-menu {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .a-sub-menu:hover {    
+    text-decoration: underline;
+  }
+
+  .main-menu {
+    display: flex;
+    justify-content: space-between;    
+    padding: 0.4rem 15%;
+  }
+
+  .main-list {
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    min-width: 413px;
+  }
+
+  .a-main-menu {
+    color: var(--darky);
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  .a-main-menu:hover {
+    color: var(--orangy);
+  }
+
+  .join-btn {
+    color: var(--orangy);
+    border: 5px solid var(--orangy);
+    padding: 0.7rem;
+  }
+
+  .join-btn:hover {
+    color: #fff;
+    background-color: var(--orangy);
+  }
+
+  /* About */
+
+  #about {
+    background-color: #f5f5f6;      
+    padding: 5rem 20%;
+    background-position: 39% 39%;    
+  }
+
+  .about-subtitle {
+    display: none;
+  }
+
+  .title {
+    width: 80%;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .line {
+    width: 35px;
+  }
+
+  .line-desk {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .main-desc {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-contact, .email{
+    font-size: 1.25rem;
+  }
+
+  /* logo */
+
+  #logo {
+    padding: 5rem 20%;
+  }
+
+  .logo-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .logo-desc {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .logo-img {
+    width: 300px;
+  }
+
+  #past-congress {
+    padding: 5rem 20%;
+  }
+
+  .grid-con {
+    grid-template-rows: 370px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .wgc {
+    gap: 0.7rem;
+  }
+
+  .wgc-title {
+    font-size: 2.5rem;
+    font-weight: bold;  
+  }
+
+  .wgc-sub {
+    font-size: 1.2rem;
+  }
+
+  #credit {
+    gap: 5%;
+  }
+
+  .wgc-logo {
+    width: 200px;
+  }
+
+  .credit-label {
+    font-size: 1rem;
+  }
+}
