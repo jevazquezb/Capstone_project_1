@@ -250,6 +250,7 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   transition: 0.5s;
+  overflow-y: scroll;
 }
 
 .close-btn {
