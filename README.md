@@ -23,7 +23,7 @@
 
 ## Project documentation (if available)
 
-(Not available)
+[Project Video](https://www.loom.com/share/36686a21c8e14dc8b9bc0a5ca4c980e9)
 
 ## Getting Started
 
