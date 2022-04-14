@@ -17,11 +17,11 @@
 - HTML, CSS and JavaScript.
 - GitHub
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://jevazquezb.github.io/Capstone_project_1/)
 
-## Project documentation (if available)
+## Project documentation
 
 [Project Video](https://www.loom.com/share/36686a21c8e14dc8b9bc0a5ca4c980e9)
 
